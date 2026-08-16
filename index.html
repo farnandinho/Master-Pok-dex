@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Master Pokédex</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =====================================
+             PAINEL LATERAL
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span>MASTER</span>
+                <span>POKÉDEX</span>
+            </div>
+
+            <div
+                id="pokemonSelecionado"
+                class="pokemon-selecionado"
+            >
+
+                <div class="mensagem-inicial">
+                    Selecione um Pokémon
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTEÚDO PRINCIPAL
+        ====================================== -->
+
+        <main class="conteudo">
+
+            <!-- =====================================
+                 TOPO
+            ====================================== -->
+
+            <header class="topo">
+
+                <!-- PESQUISA -->
+
+                <div class="pesquisa">
+
+                    <div class="icone-pokebola">
+                        <div></div>
+                    </div>
+
+                    <span class="icone-lupa">
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="campoPesquisa"
+                        placeholder="Pesquisar Pokémon..."
+                    >
+
+                </div>
+
+
+                <!-- BOTÕES -->
+
+                <div class="botoes-topo">
+
+                    <!-- FAVORITOS -->
+
+                    <button
+                        id="botaoFavoritos"
+                        class="botao-favoritos"
+                        title="Mostrar favoritos"
+                    >
+                        ☆
+                    </button>
+
+
+                    <!-- FILTRO -->
+
+                    <button
+                        id="botaoFiltro"
+                        class="botao-filtro"
+                        title="Filtrar por tipo"
+                    >
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- =================================
+                     MENU DE FILTROS
+                ================================== -->
+
+                <div
+                    id="menuFiltro"
+                    class="menu-filtro"
+                >
+
+                    <div class="titulo-filtro">
+                        Filtrar por tipo
+                    </div>
+
+
+                    <button data-tipo="todos">
+                        Todos
+                    </button>
+
+                    <button data-tipo="normal">
+                        Normal
+                    </button>
+
+                    <button data-tipo="fire">
+                        Fogo
+                    </button>
+
+                    <button data-tipo="water">
+                        Água
+                    </button>
+
+                    <button data-tipo="grass">
+                        Planta
+                    </button>
+
+                    <button data-tipo="electric">
+                        Elétrico
+                    </button>
+
+                    <button data-tipo="ice">
+                        Gelo
+                    </button>
+
+                    <button data-tipo="fighting">
+                        Lutador
+                    </button>
+
+                    <button data-tipo="poison">
+                        Veneno
+                    </button>
+
+                    <button data-tipo="ground">
+                        Terra
+                    </button>
+
+                    <button data-tipo="flying">
+                        Voador
+                    </button>
+
+                    <button data-tipo="psychic">
+                        Psíquico
+                    </button>
+
+                    <button data-tipo="bug">
+                        Inseto
+                    </button>
+
+                    <button data-tipo="rock">
+                        Pedra
+                    </button>
+
+                    <button data-tipo="ghost">
+                        Fantasma
+                    </button>
+
+                    <button data-tipo="dragon">
+                        Dragão
+                    </button>
+
+                    <button data-tipo="dark">
+                        Noturno
+                    </button>
+
+                    <button data-tipo="steel">
+                        Aço
+                    </button>
+
+                    <button data-tipo="fairy">
+                        Fada
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =====================================
+                 LISTA
+            ====================================== -->
+
+            <section>
+
+                <div class="titulo-lista">
+
+                    <h1>
+                        Pokémon
+                    </h1>
+
+                    <span id="contadorPokemon">
+                        Carregando...
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="pokedex"
+                    class="pokedex"
+                >
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
