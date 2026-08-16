@@ -1,0 +1,1149 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #fffafa;
+
+    color: #111;
+}
+
+
+/* =========================================
+   ESTRUTURA PRINCIPAL
+========================================= */
+
+.app {
+
+    display: grid;
+
+    grid-template-columns: 430px 1fr;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+
+    background: white;
+
+    border-right: 5px solid #c91b1b;
+
+    min-height: 100vh;
+
+    position: sticky;
+
+    top: 0;
+
+    height: 100vh;
+
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+
+    height: 185px;
+
+    border-bottom: 5px solid #c91b1b;
+
+    border-radius: 0 0 35px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding-left: 50px;
+
+    color: #c91b1b;
+
+    font-weight: 900;
+
+    line-height: 0.8;
+}
+
+.logo span:first-child {
+
+    font-size: 54px;
+}
+
+.logo span:last-child {
+
+    font-size: 48px;
+}
+
+
+/* =========================================
+   POKÉMON SELECIONADO
+========================================= */
+
+.pokemon-selecionado {
+
+    padding: 30px 35px;
+}
+
+.mensagem-inicial {
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 18px;
+
+    padding: 40px 10px;
+}
+
+
+/* =========================================
+   DESTAQUE
+========================================= */
+
+.destaque {
+
+    width: 100%;
+}
+
+
+/* =========================================
+   IMAGEM DO DESTAQUE
+========================================= */
+
+.destaque-imagem {
+
+    position: relative;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        145deg,
+        #fffafa,
+        #ffdede
+    );
+
+    min-height: 310px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.destaque-imagem img {
+
+    width: 270px;
+
+    height: 270px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   NÚMERO
+========================================= */
+
+.destaque-numero {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 20px;
+
+    font-size: 22px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================
+   ESTRELA
+========================================= */
+
+.botao-estrela {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 48px;
+
+    color: #c91b1b;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+.botao-estrela:hover {
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================
+   NOME DO DESTAQUE
+========================================= */
+
+.destaque h2 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-top: 10px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   TIPO DO DESTAQUE
+========================================= */
+
+.destaque-tipo {
+
+    text-align: center;
+
+    margin: 8px 0 25px;
+}
+
+
+/* =========================================
+   TIPOS
+========================================= */
+
+.tipo {
+
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    border-radius: 20px;
+
+    color: white;
+
+    margin: 3px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CORES DOS TIPOS
+========================================= */
+
+.fogo {
+
+    background: #f08030;
+}
+
+.agua {
+
+    background: #6890f0;
+}
+
+.grama {
+
+    background: #78c850;
+}
+
+.eletrico {
+
+    background: #f8d030;
+
+    color: #333;
+}
+
+.normal {
+
+    background: #a8a878;
+}
+
+.veneno {
+
+    background: #a040a0;
+}
+
+.voador {
+
+    background: #a890f0;
+}
+
+.inseto {
+
+    background: #a8b820;
+}
+
+.lutador {
+
+    background: #c03028;
+}
+
+.psiquico {
+
+    background: #f85888;
+}
+
+.pedra {
+
+    background: #b8a038;
+}
+
+.fantasma {
+
+    background: #705898;
+}
+
+.dragao {
+
+    background: #7038f8;
+}
+
+.noturno {
+
+    background: #705848;
+}
+
+.aco {
+
+    background: #b8b8d0;
+}
+
+.gelo {
+
+    background: #98d8d8;
+}
+
+.fada {
+
+    background: #ee99ac;
+}
+
+.terra {
+
+    background: #e0c068;
+}
+
+
+/* =========================================
+   ESTATÍSTICAS
+========================================= */
+
+.stats-titulo {
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.stat {
+
+    display: grid;
+
+    grid-template-columns:
+        85px 40px 1fr;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.stat-nome {
+
+    font-weight: bold;
+}
+
+.stat-valor {
+
+    text-align: right;
+}
+
+.barra {
+
+    height: 14px;
+
+    background: #eeeeee;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.barra div {
+
+    height: 100%;
+
+    background: #ff7272;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.conteudo {
+
+    padding: 45px 50px;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   TOPO
+========================================= */
+
+.topo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+
+/* =========================================
+   PESQUISA
+========================================= */
+
+.pesquisa {
+
+    flex: 1;
+
+    height: 70px;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 40px;
+
+    background: #ff7777;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    padding-left: 75px;
+}
+
+
+/* =========================================
+   POKÉBOLA
+========================================= */
+
+.icone-pokebola {
+
+    position: absolute;
+
+    left: -5px;
+
+    width: 80px;
+
+    height: 80px;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 50%;
+
+    background: white;
+
+    overflow: hidden;
+}
+
+.icone-pokebola::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 50%;
+
+    background: #ff7777;
+
+    top: 0;
+
+    left: 0;
+}
+
+.icone-pokebola::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+
+    height: 25px;
+
+    background: white;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 50%;
+
+    left: 23px;
+
+    top: 23px;
+}
+
+.icone-pokebola div {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #c91b1b;
+
+    top: 35px;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   LUPA
+========================================= */
+
+.icone-lupa {
+
+    font-size: 42px;
+
+    color: #c91b1b;
+
+    line-height: 0;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.pesquisa input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #c91b1b;
+}
+
+.pesquisa input::placeholder {
+
+    color: #c91b1b;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   BOTÕES DO TOPO
+========================================= */
+
+.botoes-topo {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   FAVORITOS
+========================================= */
+
+.botao-favoritar-card {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+
+    color: #c91b1b;
+
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition:
+        transform 0.2s,
+        background 0.2s;
+}
+
+.botao-favoritar-card:hover {
+    transform: scale(1.15);
+
+    background: #ffe2e2;
+}
+
+.botao-favoritar-card.favoritado {
+    color: #c91b1b;
+}
+
+.botao-favoritos {
+
+    height: 70px;
+
+    width: 80px;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 40px;
+
+    background: #ff7777;
+
+    color: #c91b1b;
+
+    font-size: 48px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botao-favoritos:hover {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   BOTÃO FILTRO
+========================================= */
+
+.botao-filtro {
+
+    height: 70px;
+
+    width: 80px;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 40px;
+
+    background: #ff7777;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botao-filtro:hover {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   ÍCONE DO FILTRO
+========================================= */
+
+.botao-filtro span {
+
+    display: block;
+
+    width: 30px;
+
+    height: 4px;
+
+    background: #c91b1b;
+
+    border-radius: 5px;
+
+    position: relative;
+}
+
+.botao-filtro span::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+
+    height: 8px;
+
+    background: #c91b1b;
+
+    border-radius: 50%;
+
+    top: -2px;
+}
+
+.botao-filtro span:nth-child(1)::after {
+
+    left: 6px;
+}
+
+.botao-filtro span:nth-child(2)::after {
+
+    left: 17px;
+}
+
+.botao-filtro span:nth-child(3)::after {
+
+    left: 10px;
+}
+
+
+/* =========================================
+   MENU DE FILTROS
+========================================= */
+
+.menu-filtro {
+
+    position: absolute;
+
+    top: 85px;
+
+    right: 0;
+
+    width: 420px;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 4px solid #c91b1b;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+
+    display: none;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    z-index: 1000;
+}
+
+.menu-filtro.aberto {
+
+    display: grid;
+}
+
+
+/* =========================================
+   TÍTULO DO FILTRO
+========================================= */
+
+.titulo-filtro {
+
+    grid-column: 1 / -1;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #c91b1b;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #eeeeee;
+}
+
+
+/* =========================================
+   BOTÕES DOS TIPOS
+========================================= */
+
+.menu-filtro button {
+
+    border: none;
+
+    padding: 11px 8px;
+
+    border-radius: 20px;
+
+    background: #f1f1f1;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.menu-filtro button:hover {
+
+    background: #ff7777;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TÍTULO DA LISTA
+========================================= */
+
+.titulo-lista {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.titulo-lista h1 {
+
+    font-size: 32px;
+}
+
+.titulo-lista span {
+
+    color: #777;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.pokedex {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.pokemon {
+
+    position: relative;
+
+    border: 5px solid #c91b1b;
+
+    border-radius: 30px;
+
+    background: white;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.pokemon:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 20px
+        rgba(201, 27, 27, 0.18);
+}
+
+
+/* =========================================
+   IMAGEM DO CARD
+========================================= */
+
+.pokemon-imagem {
+
+    height: 210px;
+
+    background: linear-gradient(
+        145deg,
+        #fffafa,
+        #ffdede
+    );
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.pokemon-imagem img {
+
+    width: 175px;
+
+    height: 175px;
+
+    object-fit: contain;
+
+    transition: transform 0.2s;
+}
+
+.pokemon:hover
+.pokemon-imagem img {
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   NÚMERO DO CARD
+========================================= */
+
+.numero {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 18px;
+
+    font-size: 18px;
+
+    font-weight: 900;
+
+    color: #222;
+}
+
+
+/* =========================================
+   NOME DO CARD
+========================================= */
+
+.pokemon h2 {
+
+    text-align: center;
+
+    font-size: 23px;
+
+    margin: 12px 5px 8px;
+
+    text-transform: capitalize;
+}
+
+
+/* =========================================
+   TIPOS DO CARD
+========================================= */
+
+.tipos-card {
+
+    text-align: center;
+
+    padding-bottom: 18px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .app {
+
+        grid-template-columns: 340px 1fr;
+    }
+
+    .logo span:first-child {
+
+        font-size: 42px;
+    }
+
+    .logo span:last-child {
+
+        font-size: 37px;
+    }
+
+    .pokedex {
+
+        grid-template-columns:
+            repeat(2, minmax(200px, 1fr));
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .app {
+
+        display: block;
+    }
+
+    .sidebar {
+
+        position: relative;
+
+        height: auto;
+
+        min-height: auto;
+
+        border-right: none;
+
+        border-bottom: 5px solid #c91b1b;
+    }
+
+    .logo {
+
+        height: 120px;
+
+        border-radius: 0;
+
+        padding-left: 30px;
+
+        align-items: center;
+    }
+
+    .pokemon-selecionado {
+
+        display: none;
+    }
+
+    .conteudo {
+
+        padding: 25px;
+    }
+
+    .pokedex {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .topo {
+
+        flex-direction: column;
+    }
+
+    .pesquisa {
+
+        width: 100%;
+    }
+
+    .botoes-topo {
+
+        width: 100%;
+    }
+
+    .botao-favoritos,
+    .botao-filtro {
+
+        flex: 1;
+    }
+
+    .pokedex {
+
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo {
+
+        padding: 20px;
+    }
+
+    .menu-filtro {
+
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
