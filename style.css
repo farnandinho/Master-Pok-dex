@@ -1088,7 +1088,16 @@ body {
 
     .pokemon-selecionado {
 
-        display: none;
+        padding: 25px;
+    }
+
+    .destaque-imagem img {
+
+        width: 100%;
+
+        max-width: 270px;
+
+        height: auto;
     }
 
     .conteudo {
@@ -1115,6 +1124,13 @@ body {
     .pesquisa {
 
         width: 100%;
+
+        flex: none;
+    }
+
+    .pesquisa input {
+
+        font-size: 18px;
     }
 
     .botoes-topo {
@@ -1142,8 +1158,47 @@ body {
 
         width: 100%;
 
+        top: calc(100% + 10px);
+
         grid-template-columns:
             repeat(2, 1fr);
+    }
+
+    .logo span:first-child {
+
+        font-size: 36px;
+    }
+
+    .logo span:last-child {
+
+        font-size: 32px;
+    }
+
+    .pokemon-selecionado {
+
+        padding: 20px 15px;
+    }
+
+    .destaque-imagem {
+
+        min-height: 230px;
+    }
+
+    .destaque h2 {
+
+        font-size: 30px;
+    }
+
+    .stat {
+
+        grid-template-columns: 70px 35px 1fr;
+
+        font-size: 13px;
+    }
+
+    .titulo-lista h1 {
+
+        font-size: 26px;
     }
 
 }
